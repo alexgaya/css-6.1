@@ -1,3 +1,18 @@
-img {
-    width: 100px !important
+.cssgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+
+    .film {
+        margin-top: 10px;
+
+        a>img {
+            width: 150px !important;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
 }
