@@ -1,17 +1,14 @@
 .cssgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-}
+  grid-gap: 5px; }
+  .cssgrid .film {
+    margin-top: 10px; }
+    .cssgrid .film a > img {
+      width: 150px !important; }
+      .cssgrid .film a > img:hover {
+        cursor: pointer; }
 
-.cssgrid .film {
-  margin-top: 10px;
-}
-
-.cssgrid .film a>img {
-  width: 150px !important;
-}
-
-.cssgrid .film a>img:hover {
-  cursor: pointer;
-}
+.filters {
+  display: flex;
+  flex-direction: row; }
