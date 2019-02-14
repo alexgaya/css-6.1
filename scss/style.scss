@@ -1,23 +1,55 @@
+$break-grid-3: 920px;
+$break-grid-small: 768px;
+$break-grid-small-3: 576px;
+$break-grid-small-2: 490px;
+
+@mixin grid-col($cols) {
+    grid-template-columns: repeat($cols, 1fr);
+}
+
 .cssgrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    @include grid-col(4);
     grid-gap: 5px;
+
+    @media screen and (max-width: $break-grid-3) {
+        @include grid-col(3);
+    }
+
+    @media screen and (max-width: $break-grid-small) {
+        @include grid-col(4);
+    }
+
+    @media screen and (max-width: $break-grid-small-3) {
+        @include grid-col(3);
+    }
+
+    @media screen and (max-width: $break-grid-small-2) {
+        @include grid-col(2);
+    }
 
     .film {
         margin-top: 10px;
 
-        a>img {
-            width: 150px !important;
+        a {
+            >img {
+                width: 150px !important;
+                transition: .3s;
 
-            &:hover {
-                cursor: pointer;
+                &:hover {
+                    cursor: pointer;
+                    opacity: .7;
+                }
             }
 
+            >span {
+                position: absolute;
+            }
         }
     }
 }
 
-.filters{
+.filters {
     display: flex;
     flex-direction: row;
 }
