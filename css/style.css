@@ -1,11 +1,11 @@
 .cssgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px; }
+  grid-gap: 15px; }
   @media screen and (max-width: 920px) {
     .cssgrid {
       grid-template-columns: repeat(3, 1fr); } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.5px) {
     .cssgrid {
       grid-template-columns: repeat(4, 1fr); } }
   @media screen and (max-width: 576px) {
@@ -16,8 +16,13 @@
       grid-template-columns: repeat(2, 1fr); } }
   .cssgrid .film {
     margin-top: 10px; }
+    .cssgrid .film div > button {
+      position: absolute;
+      margin-left: 10px;
+      margin-top: -10px;
+      z-index: 1; }
     .cssgrid .film a > img {
-      width: 150px !important;
+      width: 100% !important;
       transition: .3s; }
       .cssgrid .film a > img:hover {
         cursor: pointer;
