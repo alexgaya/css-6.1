@@ -33,11 +33,17 @@ $break-grid-small-2: 490px;
     .film {
         margin-top: 10px;
 
+        
+
         div > button{
             position: absolute;
             margin-left: 10px;
             margin-top: -10px;
             z-index: 1;
+
+            .fa-sort-down{
+                padding: 1px;
+            }
         }
 
         a {
