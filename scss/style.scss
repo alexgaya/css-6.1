@@ -3,6 +3,14 @@ $break-grid-small: 767.5px;
 $break-grid-small-3: 576px;
 $break-grid-small-2: 490px;
 
+//PALETTE
+
+/*$main-color: whitesmoke;
+$color-1: darken($main-color, 25%);
+$color-2: darken($main-color, 15%);
+$color-3: lighten($main-color, 15%);
+$color-4: lighten($main-color, 25%);*/
+
 @mixin grid-col($cols) {
     grid-template-columns: repeat($cols, 1fr);
 }
@@ -67,4 +75,46 @@ $break-grid-small-2: 490px;
 .filters {
     display: flex;
     flex-direction: row;
+}
+
+#bandera{
+    width: 40%;
+}
+
+
+
+
+
+.film-page{
+
+    .padre-cabecera{
+        background: black;
+
+        > img{
+            opacity: .5;
+            //border-bottom: 1px solid $main-color;
+        }
+    }
+
+    .jumbotron{
+        //background: $color-3;
+        //border: 1px solid $main-color;
+        padding: 30px 0;
+    }
+
+    .card-body{
+        margin-top: -150px;
+
+        @media screen and (max-width: $break-grid-small) {
+            margin-top: -50px;
+        }
+
+        .row > .col-12 > img {
+
+            @media screen and (max-width: $break-grid-small) {
+                width: 30%;
+            }
+            
+        }
+    }
 }
