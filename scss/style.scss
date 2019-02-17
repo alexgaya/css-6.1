@@ -1,25 +1,26 @@
+/***** VARIABLES *****/
+
 $break-grid-3: 920px;
 $break-grid-small: 767.5px;
 $break-grid-small-3: 576px;
 $break-grid-small-2: 490px;
 
-//PALETTE
 
-/*$main-color: whitesmoke;
-$color-1: darken($main-color, 25%);
-$color-2: darken($main-color, 15%);
-$color-3: lighten($main-color, 15%);
-$color-4: lighten($main-color, 25%);*/
+/***** MIXINS *****/
 
 @mixin grid-col($cols) {
     grid-template-columns: repeat($cols, 1fr);
 }
 
+/***** INHERITANCE *****/
+
+
+
 .cssgrid {
     display: grid;
     @include grid-col(4);
     grid-gap: 15px;
-
+    
     @media screen and (max-width: $break-grid-3) {
         @include grid-col(3);
     }

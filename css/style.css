@@ -1,8 +1,6 @@
-/*$main-color: whitesmoke;
-$color-1: darken($main-color, 25%);
-$color-2: darken($main-color, 15%);
-$color-3: lighten($main-color, 15%);
-$color-4: lighten($main-color, 25%);*/
+/***** VARIABLES *****/
+/***** MIXINS *****/
+/***** INHERITANCE *****/
 .cssgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
