@@ -13,11 +13,11 @@
         crossorigin="anonymous">
 </head>
 
-<body class="bg-light">
+<body>
     <!-- BOOTSTRAP - NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
         <div class="container-fluid px-4">
-            <a href="index.html" class="navbar-brand">Mi Navbar</a>
+            <a href="index.html" class="navbar-brand">DB Films</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvb" aria-controls="nvb"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
     </nav>
 
     <!-- BOOTSTRAP - CARD -->
-    <div class="container-fluid px-0 px-md-5 mt-4">
+    <div class="container-fluid px-1 px-md-5 mt-4">
         <div class="card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
@@ -58,7 +58,7 @@
                         <div class="collapse mt-1 mb-5" id="collapseFilters">
                             <div class="card card-body">
                                 <div class="filter">
-                                    <div class="filter-container">
+                                    <div class="filter-container pb-2">
                                         <h4 class="mb-3">Año:</h4>
                                         <!-- CUSTOM - FLEX -->
                                         <div class="form-group filters year">
@@ -69,8 +69,8 @@
                                             <label for="yearTo" class="mr-3">Hasta</label>
                                             <input type="text" name="yearTo" class="form-control" value="2019">
                                         </div>
-                                    </div>
-                                    <div class="filter-container">
+                                    </div><hr>
+                                    <div class="filter-container py-2">
                                         <h4 class="mb-3">Género:</h4>
                                         <div class="form-group filters genre">
                                             <select class="custom-select">
@@ -81,8 +81,8 @@
                                                 <option value="4">Dibujos</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="filter-container">
+                                    </div><hr>
+                                    <div class="filter-container py-2">
                                         <h4 class="mb-3">Idioma:</h4>
                                         <div class="form-group filters lang">
                                             <select class="custom-select">
@@ -93,8 +93,8 @@
                                                 <option value="4">Francés</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="filter-container">
+                                    </div><hr>
+                                    <div class="filter-container pt-2">
                                         <h4 class="mb-3">Subtítulos:</h4>
                                         <div class="form-group filters subtitles">
                                             <select class="custom-select">
@@ -341,10 +341,13 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="text-center">
+                            <button class="btn p-0 rounded-circle"><i class="fas fa-plus-circle fa-3x more-button"></i></button>
+                        </div>
                     </div>
                     <div class="d-none d-md-block col-4 border-left">
-                        <div class="filter">
-                            <div class="filter-container">
+                        <div class="filter p-3">
+                            <div class="filter-container pb-2">
                                 <h4 class="mb-3">Año:</h4>
                                 <!-- CUSTOM - FLEX -->
                                 <div class="form-group filters year">
@@ -355,8 +358,8 @@
                                     <label for="yearTo" class="mr-3">Hasta</label>
                                     <input type="text" name="yearTo" class="form-control" value="2019">
                                 </div>
-                            </div>
-                            <div class="filter-container">
+                            </div><hr>
+                            <div class="filter-container py-2">
                                 <h4 class="mb-3">Género:</h4>
                                 <div class="form-group filters genre">
                                     <select class="custom-select">
@@ -367,8 +370,8 @@
                                         <option value="4">Dibujos</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="filter-container">
+                            </div><hr>
+                            <div class="filter-container py-2">
                                 <h4 class="mb-3">Idioma:</h4>
                                 <div class="form-group filters lang">
                                     <select class="custom-select">
@@ -379,8 +382,8 @@
                                         <option value="4">Francés</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="filter-container">
+                            </div><hr>
+                            <div class="filter-container pt-2">
                                 <h4 class="mb-3">Subtítulos:</h4>
                                 <div class="form-group filters subtitles">
                                     <select class="custom-select">
@@ -394,6 +397,24 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer px-1 px-md-5 mt-5">
+        <div class="container-fluid">
+            <div class="row text-center py-5 d-flex justify-content-center">
+                <div class="col-12 col-md-3">
+                    <a href="#">Términos y condiciones</a>
+                </div>
+                <div class="col-12 col-md-3 mt-3 mt-md-0">
+                    <a href="#">DMCA</a>
+                </div>
+                <div class="col-12 col-md-3 mt-3 mt-md-0">
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="col-12 copy mt-5">
+                    	&copy; 2019, dbfilms.com
                 </div>
             </div>
         </div>

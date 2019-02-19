@@ -1,6 +1,40 @@
 /***** VARIABLES *****/
+/***** PALETTE *****/
 /***** MIXINS *****/
 /***** INHERITANCE *****/
+body > .container-fluid .card, body > .container-fluid .collapse > .card:hover, .film-page .card-body .row > .col-12 > img, .film-page .card-body .jumbotron {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.badge-primary {
+  background-color: #018786; }
+
+body {
+  background-color: #FFFFFF; }
+  body > nav {
+    background-color: #6200EE; }
+  body > .container-fluid {
+    margin-top: 4.5rem !important; }
+    body > .container-fluid .card {
+      border-style: none; }
+      body > .container-fluid .card > .card-header {
+        background-color: #3700B3; }
+        body > .container-fluid .card > .card-header .nav-link {
+          color: #FFFFFF; }
+        body > .container-fluid .card > .card-header .nav-link.active {
+          color: black;
+          border-color: #FFFFFF; }
+      body > .container-fluid .card > .card-body .more-button {
+        color: #018786; }
+    body > .container-fluid .collapse > .card {
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.page-footer {
+  background-color: #6200EE; }
+  .page-footer a {
+    color: #FFFFFF; }
+  .page-footer .copy {
+    color: #FFFFFF; }
+
 .cssgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -32,8 +66,9 @@
       .cssgrid .film a > img:hover {
         cursor: pointer;
         opacity: .7; }
-    .cssgrid .film a > span {
-      position: absolute; }
+    .cssgrid .film a > p {
+      font-weight: bold;
+      color: #6200EE; }
 
 .filters {
   display: flex;
@@ -47,9 +82,6 @@
   .film-page .padre-cabecera > img {
     opacity: .5; }
 
-.film-page .jumbotron {
-  padding: 30px 0; }
-
 .film-page .card-body {
   margin-top: -150px; }
   @media screen and (max-width: 767.5px) {
@@ -58,3 +90,20 @@
   @media screen and (max-width: 767.5px) {
     .film-page .card-body .row > .col-12 > img {
       width: 30%; } }
+  .film-page .card-body .jumbotron {
+    padding: 30px 0;
+    background-color: #FFFFFF; }
+    .film-page .card-body .jumbotron button {
+      border: 0 !important;
+      background-color: #018786; }
+    .film-page .card-body .jumbotron .more-button-div > button {
+      background-color: #FFFFFF;
+      color: #018786; }
+    .film-page .card-body .jumbotron .media {
+      border: 0 !important;
+      background-color: #03DAC6 !important; }
+  .film-page .card-body .card-title {
+    color: #FFFFFF; }
+    @media screen and (max-width: 767.5px) {
+      .film-page .card-body .card-title {
+        color: black; } }

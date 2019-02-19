@@ -13,11 +13,11 @@
         crossorigin="anonymous">
 </head>
 
-<body class="bg-light">
+<body>
     <!-- BOOTSTRAP - NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
         <div class="container-fluid px-4">
-            <a href="index.html" class="navbar-brand">Mi Navbar</a>
+            <a href="index.html" class="navbar-brand">DB Films</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvb" aria-controls="nvb"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,8 @@
         </div>
     </nav>
 
-    <div class="container-fluid px-0 px-md-5 mt-4">
-        <div class="card film-page">
+    <div class="container-fluid px-1 px-md-5 mt-4">
+        <div class="card film-page bg-light">
             <div class="padre-cabecera">
                 <img src="img/0-big.jpg" alt="cabecera" class="card-img-top">
             </div>
@@ -57,9 +57,9 @@
                             <li class="ml-md-3">Thriller</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-9">
-                        <h1 class="card-title text-center text-white">The Equializer 2</h1>
-                        <div class="jumbotron jumbotron-fluid rounded">
+                    <div class="col-12 col-md-9 mt-4 mt-md-0">
+                        <h1 class="card-title text-center">The Equializer 2</h1>
+                        <div class="jumbotron jumbotron-fluid">
                             <div class="container">
                                 <p class="lead font-weight-bold">
                                     Robert McCall (Denzel Washington) garantiza una justicia inquebrantable para los
@@ -75,11 +75,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="jumbotron jumbotron-fluid rounded">
+                        <div class="jumbotron jumbotron-fluid">
                             <div class="container">
                                 <p class="lead font-weight-bold">Opiniones:</p>
-                                <div class="media p-3 border bg-light mb-4">
-                                    <img src="https://placeimg.com/64/64/people" alt="usuario" class="mr-3">
+                                <div class="media p-3 border bg-light mb-4 rounded">
+                                    <img src="https://placeimg.com/64/64/people" alt="usuario" class="mr-3 rounded-circle">
                                     <div class="media-body">
                                         <h5 class="mt-0">Nombre usuario:</h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident
@@ -88,8 +88,8 @@
                                         Quod, saepe quaerat.
                                     </div>
                                 </div>
-                                <div class="media p-3 border bg-light mb-4">
-                                    <img src="https://placeimg.com/64/64/people/sepia" alt="usuario" class="mr-3">
+                                <div class="media p-3 border bg-light mb-4 rounded">
+                                    <img src="https://placeimg.com/64/64/people/sepia" alt="usuario" class="mr-3 rounded-circle">
                                     <div class="media-body">
                                         <h5 class="mt-0">Nombre usuario:</h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident
@@ -98,8 +98,8 @@
                                         Quod, saepe quaerat.
                                     </div>
                                 </div>
-                                <div class="media p-3 border bg-light mb-4">
-                                    <img src="https://placeimg.com/64/64/tech" alt="usuario" class="mr-3">
+                                <div class="media p-3 border bg-light mb-4 rounded">
+                                    <img src="https://placeimg.com/64/64/tech" alt="usuario" class="mr-3 rounded-circle">
                                     <div class="media-body">
                                         <h5 class="mt-0">Nombre usuario:</h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident
@@ -108,8 +108,8 @@
                                         Quod, saepe quaerat.
                                     </div>
                                 </div>
-                                <div class="media p-3 border bg-light mb-4">
-                                    <img src="https://placeimg.com/64/64/tech/sepia" alt="usuario" class="mr-3">
+                                <div class="media p-3 border bg-light mb-4 rounded">
+                                    <img src="https://placeimg.com/64/64/tech/sepia" alt="usuario" class="mr-3 rounded-circle">
                                     <div class="media-body">
                                         <h5 class="mt-0">Nombre usuario:</h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident
@@ -118,8 +118,8 @@
                                         Quod, saepe quaerat.
                                     </div>
                                 </div>
-                                <div class="media p-3 border bg-light mb-4">
-                                    <img src="https://placeimg.com/64/64/people" alt="usuario" class="mr-3">
+                                <div class="media p-3 border bg-light mb-4 rounded">
+                                    <img src="https://placeimg.com/64/64/people" alt="usuario" class="mr-3 rounded-circle">
                                     <div class="media-body">
                                         <h5 class="mt-0">Nombre usuario:</h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident
@@ -128,8 +128,8 @@
                                         Quod, saepe quaerat.
                                     </div>
                                 </div>
-                                <div class="media p-3 border bg-light mb-4">
-                                    <img src="https://placeimg.com/64/64/people/sepia" alt="usuario" class="mr-3">
+                                <div class="media p-3 border bg-light mb-4 rounded">
+                                    <img src="https://placeimg.com/64/64/people/sepia" alt="usuario" class="mr-3 rounded-circle">
                                     <div class="media-body">
                                         <h5 class="mt-0">Nombre usuario:</h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident
@@ -138,6 +138,9 @@
                                         Quod, saepe quaerat.
                                     </div>
                                 </div>
+                            </div>
+                            <div class="text-center more-button-div">
+                                <button class="btn p-0 rounded-circle"><i class="fas fa-plus-circle fa-3x"></i></button>
                             </div>
                         </div>
                     </div>
@@ -210,7 +213,24 @@
             </div>
         </div>
     </div>
-
+    <div class="page-footer px-1 px-md-5 mt-5">
+        <div class="container-fluid">
+            <div class="row text-center py-5 d-flex justify-content-center">
+                <div class="col-12 col-md-3">
+                    <a href="#">Términos y condiciones</a>
+                </div>
+                <div class="col-12 col-md-3 mt-3 mt-md-0">
+                    <a href="#">DMCA</a>
+                </div>
+                <div class="col-12 col-md-3 mt-3 mt-md-0">
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="col-12 copy mt-5">
+                    &copy; 2019, dbfilms.com
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
