@@ -1,0 +1,55 @@
+.film-page {
+
+    .padre-cabecera {
+        background: black;
+
+        >img {
+            opacity: .5;
+        }
+    }
+
+    .card-body {
+        margin-top: -150px;
+
+        @media screen and (max-width: $break-grid-small) {
+            margin-top: -50px;
+        }
+
+        .row>.col-12>img {
+            @extend %b-shadow;
+
+            @media screen and (max-width: $break-grid-small) {
+                width: 30%;
+            }
+        }
+
+        .jumbotron {
+            padding: 30px 0;
+            background-color: $color-background;
+            @extend %b-shadow;
+
+            button {
+                border: 0 !important;
+                background-color: $color-secondary-variant;
+            }
+
+            .more-button-div>button {
+                background-color: $color-background;
+                color: $color-secondary-variant;
+            }
+
+            .media {
+                border: 0 !important;
+                background-color: $color-secondary !important;
+            }
+        }
+
+        .card-title {
+            color: $color-background;
+
+            @media screen and (max-width: $break-grid-small) {
+                color: black;
+            }
+        }
+    }
+}

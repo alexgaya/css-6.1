@@ -6,7 +6,7 @@ $break-grid-small-3: 576px;
 $break-grid-small-2: 490px;
 
 /***** PALETTE *****/
-//Taken form material design palette
+//Taken from material design palette
 
 $color-primary: #6200EE;
 $color-primary-variant: #3700B3;
@@ -24,222 +24,48 @@ $color-error: #B00020;
 
 /***** INHERITANCE *****/
 
-%b-shadow{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+%b-shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-%b-shadow-hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+%b-shadow-hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.badge-primary{
-    background-color: $color-secondary-variant;
-}
+/***** IMPORTS *****/
 
+@import 'general';
+@import 'film-page';
+@import 'footer';
+@import 'login';
 
-body{
-    background-color: $color-background;
-
-    >nav{
-        background-color: $color-primary;
-    }
-
-    >.container-fluid{
-        margin-top: 4.5rem !important;
-
-        .card{
-            border-style: none;
-            @extend %b-shadow;
-
-            >.card-header{
-                background-color: $color-primary-variant;
-
-                .nav-link{
-                    color: $color-background;
-                }
-
-                .nav-link.active{
-                    color: black;
-                    border-color: $color-background;
-                }
-            }
-
-            >.card-body .more-button{
-                color: $color-secondary-variant;
-            }
-
-            .filter-container{
-                @extend %b-shadow;
-                padding: 15px;
-                border-radius: 4px;
-                background-color: $color-secondary;
-                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-
-                &:hover{
-                    @extend %b-shadow-hover;
-                }
-
-                input, select{
-                    border: none;
-                }
-            }
-        }
-
-        .collapse > .card{
-            box-shadow: none;
-
-            .filter-container{
-                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                
-                input, select{
-                    border: none;
-                }
-
-                &:hover{
-                    @extend %b-shadow-hover;
-                }
-            }
-
-        }
-    }
-}
-
-.page-footer{
-    background-color: $color-primary;
-
-    a{
-        color: $color-background;
-    }
-
-    .copy{
-        color: $color-background;
-    }
-}
-
-.cssgrid {
-    display: grid;
-    @include grid-col(4);
-    grid-gap: 15px;
-
-    @media screen and (max-width: $break-grid-3) {
-        @include grid-col(3);
-    }
-
-    @media screen and (max-width: $break-grid-small) {
-        @include grid-col(4);
-    }
-
-    @media screen and (max-width: $break-grid-small-3) {
-        @include grid-col(3);
-    }
+.user-card{
+    width: 25rem;
 
     @media screen and (max-width: $break-grid-small-2) {
-        @include grid-col(2);
+        width: 19rem;
     }
 
-
-
-    .film {
-        margin-top: 10px;
-    
-        div>button {
-            position: absolute;
-            margin-left: 10px;
-            margin-top: -10px;
-            z-index: 1;
-
-            .fa-sort-down {
-                padding: 1px;
-            }
+    .edit-user{
+        color: $color-secondary-variant;
+        border: none;
+        background-color: $color-background;
+        
+        &:hover{
+            cursor: pointer;
         }
 
-        a {
-            >img {
-                width: 100% !important;
-                transition: .3s;
+        &:focus{
+            outline: none;
+        }
+    }
 
-                &:hover {
-                    cursor: pointer;
-                    opacity: .7;
-                }
-            }
-
-            >p{
-                font-weight: bold;
-                color: $color-primary;
-            }
+    .col-3:first-child{
+        @media screen and (max-width: $break-grid-small-2) {
+            padding: 0; 
         }
     }
 }
 
-.filters {
-    display: flex;
-    flex-direction: row;
-}
-
-#bandera {
-    width: 40%;
-}
 
 
-
-
-
-.film-page {
-
-    .padre-cabecera {
-        background: black;
-
-        >img {
-            opacity: .5;
-        }
-    }
-
-    
-
-    .card-body {
-        margin-top: -150px;
-
-        @media screen and (max-width: $break-grid-small) {
-            margin-top: -50px;
-        }
-
-        .row>.col-12>img {
-            @extend %b-shadow;
-
-            @media screen and (max-width: $break-grid-small) {
-                width: 30%;
-            }
-
-        }
-
-        .jumbotron {
-            padding: 30px 0;
-            background-color: $color-background;
-            @extend %b-shadow;
-
-            button{
-                border: 0 !important;
-                background-color: $color-secondary-variant;
-            }
-
-            .more-button-div > button{
-                background-color: $color-background;
-                color: $color-secondary-variant;
-            }
-
-            .media{
-                border: 0 !important;
-                background-color: $color-secondary !important;
-            }
-        }
-
-        .card-title{
-            color: $color-background;
-
-            @media screen and (max-width: $break-grid-small) {
-                color: black;
-            }
-        }
-    }
-}
